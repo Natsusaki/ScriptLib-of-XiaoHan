@@ -14,5 +14,13 @@ while i <= (N-1):
     swap = int(atomlist[i]) + 1
     atomlist[i] = swap
     i +=1
-print(atomlist)
+
+fo = open("atomselect","w")
+
+for i in atomlist:
+    fo.write(str(i))
+    fo.write(" ")
+
+fo.close()
+
 
